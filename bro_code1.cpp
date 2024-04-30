@@ -75,18 +75,24 @@ int main(){
     //STRING - Conjunto de caracteres
 
     std::string nome = "Hanah"; //atribuindo a variavel nome(uma string) o "valor" Hanah
-    std::string idade = "20";
+    std::string semestre = "5 semestre";
 
 
 
     std::cout << nome << '\n';
 
-    std::cout << "Olá " << nome << " Você tem " << idade << '\n'; //exibindo texto e valores no mesmo comando
+    std::cout << "Olá " << nome << " Você está no " << semestre << '\n'; //exibindo texto e valores no mesmo comando
 
 
-    
+    //CONVERSÃO DE TIPOS
+    //ex: porcentagem de acertos
 
-    
+    int acertos = 8;
+    int questoes = 10;
+    double nota = acertos/(double)questoes *100;
+    //necessario fazer a conversão, caso contrario o resultado seria a divisao do inteiro de 8/10 (0), *100 
 
-    return 0;
+    std::cout << nota << '%';
+
+     return 0;
 }
